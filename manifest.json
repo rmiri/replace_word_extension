@@ -1,0 +1,18 @@
+{
+    "name": "Replace this word",
+    "version": "1.0.0",
+    "description": "Change a word you don't want to see anymore",
+    "manifest_version": 2,
+    "icons": {
+       "16": "images/16.png",
+        "128":"images/128.png"
+    },
+    "content_scripts":[
+        {
+          "matches": ["<all_urls>"],
+          "js": ["findWord.js"]
+        }
+    ]
+}
+
+
